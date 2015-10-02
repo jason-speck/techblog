@@ -1,0 +1,11 @@
+# Site settings
+title: Shell scripts and rubberbands
+email: js@xinuol.net
+description: > # this means to ignore newlines until "baseurl:"
+  Jason's technical investigations and ramblings.
+baseurl: "/techblog/" # the subpath of your site, e.g. /blog/
+url: "http://jason-speck.github.io" # the base hostname & protocol for your site
+github_username:  jason-speck
+
+# Build settings
+markdown: kramdown
