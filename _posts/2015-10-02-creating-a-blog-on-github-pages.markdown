@@ -13,7 +13,7 @@ I'm assuming that you're not an expert on any of the tools we're using, but that
 you know enough about Ruby package management (via gem), github, and GitHub, to be
 dangerous.
 
-Create your github repo
+Create your GitHub repo
 =======================
 
 This blog is hosted on [GitHub Pages](https://pages.github.com/), which is a great way to publish a simple,
