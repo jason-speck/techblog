@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating a blog with Jekyll and github pages"
+title:  "Creating a blog with Jekyll and GitHub Pages"
 date:   2015-10-02 10:41:00
 categories: jekyll github blogging
 ---
@@ -10,18 +10,18 @@ useful notes with the world.  For my first entry, I thought I'd document how I
 set this blog up.
 
 I'm assuming that you're not an expert on any of the tools we're using, but that
-you know enough about ruby package management (via gem), github, and git, to be
+you know enough about Ruby package management (via gem), github, and GitHub, to be
 dangerous.
 
 Create your github repo
 =======================
 
-This blog is hosted on [github pages](https://pages.github.com/), which is a great way to publish a simple,
+This blog is hosted on [GitHub Pages](https://pages.github.com/), which is a great way to publish a simple,
 minimalist blog.  There are a few things you need to do first, which I won't cover
-in detail, as they're already documented well on the github website.
+in detail, as they're already documented well on the GitHub website.
 
-* [Register](http://github.com/join) for a github account if you don't have one already
-* [Configure ssh access]( http://help.github.com/articles/generating-ssh-keys/) to your github account, so you can push to your repositories from your computer
+* [Register](http://github.com/join) for a GitHub account if you don't have one already
+* [Configure ssh access]( http://help.github.com/articles/generating-ssh-keys/) to your GitHub account, so you can push to your repositories from your computer
 * [Create a repository](https://pages.github.com/#project-site) for your blog.  Make sure to make `gh-pages` the default branch as described in that documentation.
 
 Create your local git repo
@@ -41,7 +41,7 @@ Now you can try to push a new page to your site.  Create a file called
 
     hello world from github pages!
 
-You need to commit this to your local repository, then push it to your github
+You need to commit this to your local repository, then push it to your GitHub
 repository:
 
     cd techblog
@@ -86,11 +86,11 @@ You should see a basic site at <http://localhost:4000>
 
 Hit `Ctrl-C` to kill the test server.  
 
-Publish to github pages
+Publish to GitHub Pages
 =======================
 
 Now let's publish it on github.io.  First you need to install the github-pages
-gem that will guarantee your jekyll build environment matches github page's
+gem that will guarantee your jekyll build environment matches GitHub Page's
 environment.  
 
     gem install github-pages
@@ -105,7 +105,7 @@ follows:
 While you're editing that file, you can change any other values as you like.
 
 After saving your `_config.yml`, you can add the new files to git, and push to
-your github repo:
+your GitHub repo:
 
     git add .
     git commit -m "my first jekyll"
@@ -126,7 +126,7 @@ config file:
     jekyll serve --baseurl=""
 
 You can use this local server to easily test any changes you make before
-commiting and pushing to github.
+commiting and pushing to GitHub.
 
 Add content to your blog
 ========================
@@ -161,7 +161,7 @@ it's simple to figure out from browsing the
 Once you've written your first post, look at your test server in your browser
 again, and you'll see that a link to your post has been added to the index page.
 
-If everything looks good, you can now publish to github:
+If everything looks good, you can now publish to GitHub:
 
     git add .
     git commit -m "my first blog post"
