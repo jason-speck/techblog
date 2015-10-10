@@ -106,6 +106,9 @@ be substituted with the `folder` value.  So `+INBOX` is equivalent to `imaps://u
 
 Sending mail
 ============
+The IMAP settings only cover receiving mail.  You also need to configure the SMTP settings.
+
+Add the following to your .muttrc:
 
 Managing folders
 ================
