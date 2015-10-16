@@ -11,12 +11,11 @@ protocol.  To explore the IMAP protocol, you can use the ncat tool.  You
 can also use netcat, or telnet, but ncat allows you to connect to both
 plain-text and secure IMAP servers with a minimum of hassle.
 
-Installing ncat
-===============
+##Installing ncat
+
 Yup, you gotta install it.
 
-Connecting to the server
-========================
+##Connecting to the server
 
 To connect to a plain-text IMAP server, execute the following:
 
@@ -33,8 +32,8 @@ Once you connect you'll see something like:
 
     * OK Kerio Connect 8.5.1 IMAP4rev1 server ready
 
-Communicating with the server
-=============================
+##Communicating with the server
+
 All IMAP commands are prefixed with a short alphanumeric string called a
 "tag".  You can use whatever you like here.  The tag is followed by a
 command and a number of arguments.
@@ -43,8 +42,8 @@ The server will then respond.
 
 When you're ready to disconnect, use `CTRL-D`.
 
-Authenticating with the server
-==============================
+##Authenticating with the server
+
 Before running any other commands, you must first log in.  You use the
 LOGIN command for this:
 
@@ -54,8 +53,8 @@ To which the server responds:
 
     tag OK LOGIN completed
 
-Exploring your mailboxes
-========================
+##Exploring your mailboxes
+
 You can list all your mailboxes with the LIST command:
 
     
@@ -104,8 +103,7 @@ To delete a mail:
     tag OK Store completed.
 
 
-Special mailboxes
-=================
+##Special mailboxes
 
 You'll notice in the initial LIST example that some of the mailboxes
 have a special backslashed value in parenthesis, such as `\Inbox` or
@@ -136,8 +134,7 @@ This is gmail (filtered, since it doesn't support SPECIAL-USE):
 
 
 
-Trash
------
+###Trash
 
 In the Kerio IMAP server, deleting a message automatically moves it to
 the "Deleted Items" folder.  When you delete a message in "Deleted
@@ -151,20 +148,17 @@ Gandi does no magic.  When you delete, it sets delete flag.  When you
 expunge it is truly expunged.  You need to make your IMAP client move
 the message to the Trash.
 
-Drafts
-------
+###Drafts
 
 I don't think there's any magic here.  You should check what it is,
 though to configure your mail client correctly
 
-Junk
-----
+###Junk
 
 Again, no magic here.  This just tells your client where to check for
 the spam folder in case the client treats it specially.
 
-Sent
-----
+###Sent
 
 In Kerio,there's no magic here.  But you want to know this value to set
 mutt's `record` variable correctly.
